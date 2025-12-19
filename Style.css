@@ -1,0 +1,151 @@
+/* ================================
+   DISEÑO SIMPLE Y ESTABLE (MÓVIL)
+   ================================ */
+
+:root {
+  --bg: #f4f4f5;
+  --card: #ffffff;
+  --text: #111827;
+  --primary: #2563eb;
+  --border: #d1d5db;
+}
+
+body.dark {
+  --bg: #111827;
+  --card: #1f2937;
+  --text: #f9fafb;
+  --border: #374151;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CONTENEDOR */
+.app {
+  width: 100%;
+  max-width: 400px;
+  background: var(--card);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+/* FORMULARIO */
+.task-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+}
+
+.task-form button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+}
+
+/* LISTA */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.task.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task button {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+/* SWITCH MODO OSCURO */
+.switch {
+  position: relative;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  background: #9ca3af;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 2px;
+  left: 2px;
+  background: white;
+  border-radius: 50%;
+}
+
+input:checked + .slider::before {
+  transform: translateX(20px);
+}

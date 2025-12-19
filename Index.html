@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do App | Portafolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>Mis Tareas</h1>
+      <label class="switch">
+        <input type="checkbox" id="themeToggle" />
+        <span class="slider"></span>
+      </label>
+    </header>
+
+    <form id="taskForm" class="task-form">
+      <input type="text" id="taskInput" placeholder="Escribe una tarea..." />
+      <button type="submit">Agregar</button>
+    </form>
+
+    <ul id="taskList" class="task-list"></ul>
+
+    <footer class="footer">
+      <p>Proyecto de portafolio · HTML · CSS · JavaScript</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
