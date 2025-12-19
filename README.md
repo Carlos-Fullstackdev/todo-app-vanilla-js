@@ -48,9 +48,8 @@ Proyecto funcional y estable, utilizado como base para demostrar fundamentos de 
 ## 🌐 Demo
 
 🔗 Live demo:  
-https://TU-USUARIO.github.io/todo-app-vanilla-js/
+https://carlos-fullstackdev.github.io/todo-app-vanilla-js/
 
-*(Reemplaza TU-USUARIO con tu usuario de GitHub)*
 
 ---
 
