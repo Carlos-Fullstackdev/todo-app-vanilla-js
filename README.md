@@ -17,4 +17,5 @@ Una aplicación de tareas pendientes (*To-Do App*) hecha con **HTML, CSS y JavaS
 ## 📂 Cómo usar
 1. Clona el repositorio:
 ```bash
-git clone https://github.com/Carlos-Fullstackdev/Todo-App.git](https://carlos-fullstackdev.github.io/todo-app-vanilla-js/
+git clone https://carlos-fullstackdev.github.io/todo-app-vanilla-js/
+
